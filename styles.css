@@ -1,12 +1,9 @@
-/* ===== Estilos generales ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(135deg, #1e88e5, #42a5f5);
     color: #333;
 }
-
-/* ===== Encabezado ===== */
 header {
     background-color: #0d47a1;
     color: white;
@@ -30,8 +27,6 @@ nav a:hover,
 nav a.activo {
     text-decoration: underline;
 }
-
-/* ===== Contenido principal ===== */
 main.contacto {
     max-width: 800px;
     margin: 40px auto;
@@ -45,8 +40,6 @@ main h2 {
     text-align: center;
     color: #0d47a1;
 }
-
-/* ===== Información de contacto ===== */
 .info-contacto h3 {
     color: #1565c0;
     border-bottom: 2px solid #90caf9;
@@ -56,8 +49,6 @@ main h2 {
 .info-contacto p {
     margin: 0.5em 0;
 }
-
-/* ===== Formulario ===== */
 .formulario {
     margin-top: 25px;
 }
@@ -100,8 +91,6 @@ button {
 button:hover {
     background-color: #1565c0;
 }
-
-/* ===== Pie de página ===== */
 footer {
     background-color: #0d47a1;
     color: white;
@@ -117,3 +106,4 @@ footer {
     background-color: white;
     margin-bottom: 10px;
 }
+
