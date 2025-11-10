@@ -1,25 +1,21 @@
-header {
-    background-color: #1e88e5;
-    color: white;
-    text-align: center;
-    padding: 1.5em 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
+/* ===== Estilos generales ===== */
 body {
-    background-color: #ffeb3b; /* amarillo llamativo */
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #ff7043, #ffeb3b);
-
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+    color: #333;
 }
+
+/* ===== Encabezado ===== */
+header {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
 nav {
-    margin-top: 0.5em;
+    margin-top: 10px;
 }
 
 nav a {
@@ -27,54 +23,67 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: text-decoration 0.3s;
 }
 
 nav a:hover,
 nav a.activo {
-    color: #ffeb3b;
     text-decoration: underline;
 }
+
+/* ===== Contenido principal ===== */
 main.contacto {
     max-width: 800px;
-    margin: 2em auto;
+    margin: 40px auto;
     padding: 25px;
-    background-color: #ff7043; /* naranja llamativo */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-
-main.contacto h2 {
+main h2 {
     text-align: center;
-    margin-bottom: 1em;
+    color: #0d47a1;
+}
+
+/* ===== Información de contacto ===== */
+.info-contacto h3 {
+    color: #1565c0;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 5px;
 }
 
 .info-contacto p {
     margin: 0.5em 0;
 }
+
+/* ===== Formulario ===== */
+.formulario {
+    margin-top: 25px;
+}
+
 .formulario h3 {
-    margin-bottom: 0.5em;
+    color: #1565c0;
 }
 
 .formulario form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
 input, textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: inherit;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #1e88e5;
     box-shadow: 0 0 5px rgba(30,136,229,0.5);
-    outline: none;
 }
 
 button {
@@ -82,26 +91,29 @@ button {
     color: white;
     border: none;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
 }
 
 button:hover {
     background-color: #1565c0;
 }
+
+/* ===== Pie de página ===== */
 footer {
-    background-color: #eee;
+    background-color: #0d47a1;
+    color: white;
     text-align: center;
-    padding: 1.5em 0;
-    margin-top: 2em;
-    font-size: 0.9em;
-    color: #555;
-    border-top: 2px solid #ccc; /* línea al inicio del footer */
+    padding: 20px 0 10px 0;
+    margin-top: 40px;
 }
+
 .footer-line {
+    width: 80%;
     border: none;
-    border-top: 2px solid #ccc;
-    margin: 0; /* ajusta según el espaciado que quieras */
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px;
 }
