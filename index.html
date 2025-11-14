@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txantec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+         <img src="../imagenes/txantec_def.png" alt="logo" width="150px" height="150px">
+        
+        <nav>
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <section id ="inicio">
+        <div>
+             <h1>TxanTec</h1>
+
+  
+            <p>En esta tienda tendras al alcance de tu mano lo <strong>mejor</strong> de la tecnología. Perifericos, ordenadores... al mejor <strong>precio</strong>.</p>
+        </div>
+
+    </section>
+
+
+
+    <section id="catalogo">
+        
+        <h1>Nuestro Catálogo</h1>
+
+        <div>
+
+            <div>
+                <img src="https://graffica.info/wp-content/uploads/2021/03/photo-1589897657344-733d6b13596d-1024x683.jpeg" alt="ordenador para Ofimatica" width="300">
+                <h3>Ordenador para Ofimatica</h3>
+                <p>3.279 $</p>
+                <button 
+                            class="add-to-cart-btn"
+                            data-product-id="1"
+                            data-product-name="Ordenador Ofimática"
+                            data-product-price="3279.00">
+                            Añadir al carrito
+                </button>
+            </div>
+
+            <hr> <div>
+                <img src="https://blog.cabeperu.com/wp-content/uploads/2024/05/pc-gamer-caracteristicas-y-ventajas-esenciales-en-2024.jpg" alt="Ordenador para Gaming" width="300">
+                <h3>Ordenador para Gaming</h3>
+                <p>2999 $</p>
+                <button 
+                            class="add-to-cart-btn"
+                            data-product-id="2"
+                            data-product-name="Ordenador Gaming"
+                            data-product-price="2999.00">
+                            Añadir al carrito
+                </button>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="https://s1.ppllstatics.com/rc/www/multimedia/2024/08/30/0%20pc%20sobremesa-RgDejZEtZh6kYhNyTycU6MM-1200x840@RC.jpg" alt="Ordenador para Oficina" width="300">
+                <h3>Ordenador para Oficina</h3>
+                <p>359.00 $</p>
+                <button 
+                            class="add-to-cart-btn"
+                            data-product-id="3"
+                            data-product-name="Ordenador Oficina"
+                            data-product-price="359.00">
+                            Añadir al carrito
+                </button>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCRuCZjLvad13XQuWeOYG4xvBkAG0emNG9UQ&s" alt="Pack de Perifericos" width="300">
+                <h3>Pack de Perifericos</h3>
+                <p>47,99 $</p>
+                <button 
+                            class="add-to-cart-btn"
+                            data-product-id="4"
+                            data-product-name="Pack Periféricos"
+                            data-product-price="47.99">
+                            Añadir al carrito
+                </button>
+            </div>
+
+            <hr>
+
+            <div>
+                <img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202408/06/00115216122380____10__640x640.jpg" alt="Pantalla" width="300">
+                <h3>Pantalla 27"</h3>
+                <p>180.00 $</p>
+                <button 
+                            class="add-to-cart-btn"
+                            data-product-id="5"
+                            data-product-name="Pantalla 27"
+                            data-product-price="180.00">
+                            Añadir al carrito
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="cart-container">
+            <h2 class="cart-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                Tu Carrito
+            </h2>
+
+            <div id="cart-items">
+                <p id="empty-cart-message">El carrito está vacío.</p>
+                </div>
+
+            <div class="cart-summary">
+                <div class="cart-total-line">
+                    <span class="total-text">Total:</span>
+                    <span id="cart-total" class="total-amount">0.00 $</span>
+                </div>
+                <button class="checkout-btn">
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <button id="cart-toggle-btn" class="cart-toggle-btn">
+        <svg id="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span id="cart-count-badge" class="cart-count-badge">0</span>
+    </button>
+
+
+
+
+    <footer>
+        <hr class="footer-line">
+        <p>&copy; 2025 TxanTec | Todos los derechos reservados</p>
+    </footer>
+    
+
+<script>
+        // Array para almacenar los productos en el carrito
+        let cart = [];
+
+        // Referencias a elementos del DOM
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotalElement = document.getElementById('cart-total');
+        const emptyCartMessage = document.getElementById('empty-cart-message');
+        const cartCountBadge = document.getElementById('cart-count-badge');
+        const cartContainer = document.getElementById('cart-container');
+        const cartToggleButton = document.getElementById('cart-toggle-btn');
+
+        // Función para actualizar el carrito
+        function renderCart() {
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+            let totalItems = 0;
+
+            if (cart.length === 0) {
+                emptyCartMessage.style.display = 'block';
+            } else {
+                emptyCartMessage.style.display = 'none';
+                
+                cart.forEach(item => {
+                    const itemPrice = item.price * item.quantity;
+                    total += itemPrice;
+                    totalItems += item.quantity;
+
+                    // Crea el elemento HTML para el producto en el carrito
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('cart-item');
+                    itemElement.innerHTML = `
+                        <div class="item-info">
+                            <span class="item-name">${item.name}</span>
+                            <span class="item-price">${item.quantity} x ${parseFloat(item.price).toFixed(2)} $</span>
+                        </div>
+                        <span class="item-subtotal">${parseFloat(itemPrice).toFixed(2)} $</span>
+                        <button 
+                            class="remove-btn"
+                            data-product-id="${item.id}"
+                            title="Eliminar uno">
+                            -
+                        </button>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+            }
+
+            // Actualizar el precio total y el contador
+            cartTotalElement.textContent = `${total.toFixed(2)} $`;
+            cartCountBadge.textContent = totalItems.toString();
+        }
+
+        // Función para añadir un producto
+        function addToCart(productId, name, price) {
+            price = parseFloat(price);
+            const existingItem = cart.find(item => item.id === productId);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ id: productId, name, price, quantity: 1 });
+            }
+
+            renderCart();
+        }
+
+        // Función para eliminar un producto
+        function removeFromCart(productId) {
+            const itemIndex = cart.findIndex(item => item.id === productId);
+
+            if (itemIndex > -1) {
+                const item = cart[itemIndex];
+                item.quantity -= 1;
+
+                if (item.quantity <= 0) {
+                    cart.splice(itemIndex, 1);
+                }
+            }
+
+            renderCart();
+        }
+
+        // Agrega la funcion de añadir o eliminar
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('add-to-cart-btn')) {
+                const button = event.target;
+                const productId = button.getAttribute('data-product-id');
+                const name = button.getAttribute('data-product-name');
+                const price = button.getAttribute('data-product-price');
+                
+                addToCart(productId, name, price);
+            }
+
+            if (event.target.classList.contains('remove-btn')) {
+                const button = event.target;
+                const productId = button.getAttribute('data-product-id');
+                
+                removeFromCart(productId);
+            }
+        });
+
+    
+        // Inicializar
+        renderCart();
+    </script>
+    
+
+</body>
+</html>
